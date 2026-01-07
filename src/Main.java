@@ -40,5 +40,24 @@ public class Main {
         scanner.nextLine();//After int or double , we place a buffer so the Enter key isn't considered
         //you can use nextDouble() for double and nextBoolean() for boolean variable
         scanner.close(); //need to close once opened
+        //Arithmetic Operators
+        int x = 1;
+        int y = 2;
+        int z = x+y;
+        System.out.println(z);
+        //we can subtract, multiply, divide or modulus!
+        /*
+        augmented assignment operators
+        x += y;
+        we can subtract, multiply, divide or modulus here too...
+        increment and decrement
+        x++;
+        x--;
+        */
+
+        //ORDER OF OPERATIONS (P-E-M-D-A-S)
+        //PARENTHESIS-EXPONENTS-MULTIPLICATION-DIVISION-ADDITION-SUBTRACTION
+        double res = 2 + 4 * (9-5)/2.0;
+        System.out.println(res);
     }
 }
