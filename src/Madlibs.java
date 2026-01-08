@@ -13,7 +13,7 @@ public class Madlibs {
         System.out.print("Enter a Celebrity Name: ");
         String celeb = scan.nextLine();
 
-        System.out.print("Enter a Noun (object): ");
+        System.out.print("Enter a Noun (something to eat): ");
         String noun = scan.nextLine();
 
         System.out.print("Enter a Funny Sound (e.g., Yeet, Moo): ");
