@@ -1,4 +1,5 @@
 import java.sql.SQLOutput;
+import java.util.Random;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -59,5 +60,63 @@ public class Main {
         //PARENTHESIS-EXPONENTS-MULTIPLICATION-DIVISION-ADDITION-SUBTRACTION
         double res = 2 + 4 * (9-5)/2.0;
         System.out.println(res);
+
+        //IF statements
+        int num = 22;
+        if(num >= 18){
+            System.out.println("you are legit!");
+        }
+        else if (num < 0) {
+            System.out.println("you born yet!?");
+        }
+        else{
+            System.out.println("you are a minor!");
+        }
+
+        //random Numbers
+        Random ran = new Random();
+        int var;
+        var = ran.nextInt(0,101);
+        //the random variables show up in the range of 0 to 100
+        // we can use the int, double and boolean too
+
+        //Math Stuff
+        System.out.println(Math.PI); // output = 3.14....
+        System.out.println(Math.E); // output = 2.71...
+        int power = (int) Math.pow(2, 3); //output = 8
+        System.out.println(power);
+        int abs = Math.abs(-5);
+        System.out.println(abs); //output = 5
+        int sqrt = (int)Math.sqrt(9);
+        System.out.println(sqrt); // output = 3
+        int round = (int)Math.round(13.34);
+        System.out.println(round); // output = 13
+        int ceil = (int)Math.ceil(13.23);
+        System.out.println(ceil); // output = 14
+        // floor to round down
+        // we can use max(a,b) or min to find maximum and  minimum of two no.s
+
+
+        //printf()
+        String you = "Me";
+        System.out.printf("you are %s",you);
+        // you can use %c for char, %d for int, %f for double, %b for boolean
+        // these are called specifier characters
+        //same as C programming language
+        double price = 12.304;
+        System.out.printf("%.2f",price);
+        //.2 in front of specifier is called as .precision
+        double price1 = 12.4604;
+        System.out.printf("%+.2f",price1); // output = +12.4604
+        //[Flags]
+        // + = output the plus
+        // , = comma grouping separator
+        // ( = negative no.s are enclosed in ()
+        // space = display '-' if neg or ' ' for pos
+        double id = 12;
+        System.out.printf("%04f",id);
+        //  0 = zero padding; output = 0012
+        // number = right justified padding; output = __12
+        // -number = left justified padding; output = 12__
     }
 }
