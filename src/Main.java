@@ -118,5 +118,38 @@ public class Main {
         //  0 = zero padding; output = 0012
         // number = right justified padding; output = __12
         // -number = left justified padding; output = 12__
+
+        //NESTED IF STATEMENTS
+        System.out.println("--- MYSTERY HOUSE ---");
+        System.out.println("You see two doors.");
+        System.out.print("Press 1 for Left, 2 for Right: ");
+        int door = scanner.nextInt();
+
+        // OUTER IF
+        if (door == 1) {
+            System.out.println("\nInside Door 1, you see a Lion!");
+            System.out.print("Press 1 to Feed it, 2 to Poke it: ");
+            int action = scanner.nextInt();
+
+            // NESTED IF (Inside Door 1)
+            if (action == 1) {
+                System.out.println("RESULT: The lion is happy. You survive!");
+            } else {
+                System.out.println("RESULT: You poked a lion? You get eaten. RIP.");
+            }
+
+        } else {
+            // OUTER ELSE (Door 2)
+            System.out.println("\nInside Door 2, you see a Chest.");
+            System.out.print("Press 1 to Open, 2 to Walk away: ");
+            int chest = scanner.nextInt();
+
+            // NESTED IF (Inside Door 2)
+            if (chest == 1) {
+                System.out.println("RESULT: You found gold! You are rich.");
+            } else {
+                System.out.println("RESULT: You walked away poor. Sad.");
+            }
+        }
     }
 }
