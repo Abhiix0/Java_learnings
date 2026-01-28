@@ -10,7 +10,7 @@ public class OperatorsDemo {
         System.out.println(x / y);
         System.out.println(x % y);
 
-        // Order of operations
+        // Order of operations(P-E-M-D-A-S)
         double result = 2 + 4 * (9 - 5) / 2.0;
         System.out.println(result);
     }
