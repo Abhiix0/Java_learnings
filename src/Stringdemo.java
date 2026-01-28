@@ -1,5 +1,3 @@
-import java.sql.SQLOutput;
-
 public class Stringdemo {
     public static void main(String[] args){
         String name = "one piece";
