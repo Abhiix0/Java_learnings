@@ -1,27 +1,45 @@
 package Oops;
 
 public class GameCharacter {
-    String name;
-    int health;
-    String power;
+    private String name;
+    private int health;
+    private String power;
 
+    public String getName(){
+        return name;
+    }
+
+    public int getHealth(){
+        return health;
+    }
+
+    public String getPower(){
+        return power;
+    }
+
+    public void setHealth(int health){
+
+        if (health >0){
+            this.health = health;
+        }
+    }
     GameCharacter(String name, int health, String power){
         this.name = name;
-        this.health = health;
+        setHealth(health);
         this.power = power;
     }
 
-    void attack(){
+    public void attack(){
         health -= 200;
         System.out.println(name + " attacks the beast with " + power);
     }
 
-    void heal(){
+    public void heal(){
         health += 300;
         System.out.println(name + " is healing");
     }
 
-    void showStatus(){
+    public void showStatus(){
         System.out.println(name);
         System.out.println(name + " health " + health);
         System.out.println(name +"'s ability is "+ power);
@@ -35,10 +53,10 @@ public class GameCharacter {
         System.out.println("your characters");
         gc1.showStatus();
         gc2.showStatus();
-        System.out.println("A wild beast appears and attacks "+ gc2.name);
+        System.out.println("A wild beast appears and attacks "+ gc2.getName());
         gc1.attack();
         gc2.heal();
-        System.out.println(gc2.name + " finishes the beast with " + gc2.power);
+        System.out.println(gc2.getName() + " finishes the beast with " + gc2.getPower());
 
     }
 }
