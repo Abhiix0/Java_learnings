@@ -65,18 +65,6 @@ Each project was developed in its **own Git branch** and merged back to `main` u
 
 ---
 
-## 🔮 What’s coming next
-
-This repository is **not finished**.
-
-Planned next steps:
-- 🔹 Object-Oriented Programming (classes, objects, encapsulation)
-- 🔹 2 bigger and better Java projects
-- 🔹 Cleaner project structure
-- 🔹 More real-world problem solving
-
----
-
 ## 🧑‍💻 Author
 
 **Abhiix0**  
